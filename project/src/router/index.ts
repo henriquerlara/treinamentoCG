@@ -1,15 +1,15 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import Grid from '../components/Grid.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import HomePage from "../views/Home.vue";
+import GridPage from "../components/Grid.vue";
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/grid', name: 'Grid', component: Grid }
+  { path: "/", name: "Home", component: HomePage },
+  { path: "/grid", name: "GridPage", component: GridPage },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
 });
 
 export default router;
