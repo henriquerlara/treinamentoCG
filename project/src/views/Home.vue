@@ -3,7 +3,6 @@
     <h1>Hello World</h1>
     <p>oiiiii</p>
     <router-link to="/grid" class="btn btn-primary">Go to Grid</router-link>
-    <router-view />
   </div>
 </template>
 

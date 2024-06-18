@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lint:fix": "vue-cli-service lint --fix"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -13,9 +14,11 @@
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
-    "vue-router": "^4.1.3"
+    "vue-router": "^4.1.3",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.24.7",
     "@types/node": "^20.14.2",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
@@ -45,7 +48,11 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "prettier/prettier": "off", 
+      "quotes": "off", 
+      "semi": "off"
+    }
   },
   "browserslist": [
     "> 1%",

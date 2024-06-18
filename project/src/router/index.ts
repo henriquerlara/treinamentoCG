@@ -3,12 +3,12 @@ import HomePage from "../views/Home.vue";
 import GridPage from "../components/Grid.vue";
 
 const routes = [
-  { path: "/", name: "Home", component: HomePage },
+  { path: "/", name: "HomePage", component: HomePage },
   { path: "/grid", name: "GridPage", component: GridPage },
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 

@@ -2,6 +2,7 @@
   <div class="container mt-5">
     <h1>Hello World</h1>
     <router-link to="/grid" class="btn btn-primary">Go to Grid</router-link>
+    <router-view />
   </div>
 </template>
 
@@ -9,7 +10,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "HomePage",
+  name: "App",
 });
 </script>
 
