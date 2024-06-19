@@ -1,0 +1,24 @@
+[
+    {
+      "isActive": true,
+      "name": "John Doe",
+      "company": "Company A",
+      "age": 30,
+      "registered": "2020-03-15"
+    },
+    {
+      "isActive": false,
+      "name": "Jane Smith",
+      "company": "Company B",
+      "age": 25,
+      "registered": "2019-05-20"
+    },
+    {
+      "isActive": true,
+      "name": "Peter Johnson",
+      "company": "Company C",
+      "age": 40,
+      "registered": "2021-12-10"
+    }
+  ]
+  
