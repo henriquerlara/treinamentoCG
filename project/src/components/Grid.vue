@@ -25,7 +25,7 @@ interface RowData {
 }
 
 class CustomDataSource extends DataSource<RowData> {
-  async load() {
+ load() {
     return new Promise<RowData[]>((resolve) => {
       setTimeout(() => {
         resolve([
