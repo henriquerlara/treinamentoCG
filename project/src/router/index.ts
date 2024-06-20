@@ -1,14 +1,28 @@
-import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "../views/Home.vue";
-import GridPage from "../components/Grid.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import GridPage from '@/components/Grid.vue';
+import FormPage from '@/components/FormPage.vue';
+import Home from '@/views/Home.vue';
 
 const routes = [
-  { path: "/", name: "HomePage", component: HomePage },
-  { path: "/grid", name: "GridPage", component: GridPage },
+  {
+    path: '/grid',
+    name: 'GridPage',
+    component: GridPage,
+  },
+  {
+    path: '/',
+    name: 'home',
+    component: Home,
+  },
+  {
+    path: '/form',
+    name: 'FormPage',
+    component: FormPage,
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 

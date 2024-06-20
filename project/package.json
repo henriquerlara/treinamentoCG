@@ -9,8 +9,9 @@
     "lint:fix": "vue-cli-service lint --fix"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "bootstrap": "^5.3.3",
-    "consulte-framework-vue": "^1.1.0",
+    "consulte-framework-vue": "^1.1.7",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",

@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MyAPI",
+    "\\MyAPI\\MyAPI",
+    "\\MyAPI\\MyAPI\\Controllers",
+    "\\MyAPI\\MyAPI\\Properties"
+  ],
+  "SelectedNode": "\\MyAPI\\MyAPI\\Controllers\\UsersController.cs",
+  "PreviewInSolutionExplorer": false
+}

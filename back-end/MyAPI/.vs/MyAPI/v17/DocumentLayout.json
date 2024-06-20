@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\henri\\OneDrive\\Documentos\\GitHub\\treinamentoCG\\back-end\\MyAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07126F19-68D2-4820-A241-D60EEBB8ED8F}|MyAPI\\MyAPI.csproj|c:\\users\\henri\\onedrive\\documentos\\github\\treinamentocg\\back-end\\myapi\\myapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07126F19-68D2-4820-A241-D60EEBB8ED8F}|MyAPI\\MyAPI.csproj|solutionrelative:myapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\henri\\OneDrive\\Documentos\\GitHub\\treinamentoCG\\back-end\\MyAPI\\MyAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "MyAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\henri\\OneDrive\\Documentos\\GitHub\\treinamentoCG\\back-end\\MyAPI\\MyAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "MyAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T13:30:21.942Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,10 +1,7 @@
 <template>
   <div class="container mt-5">
-    <ConsulteGrid
-      :name="'testGrid'"
-      :columns="columns"
-      :data-source="dataSource"
-    />
+    <router-link to="/form" class="btn btn-primary mb-3">Add New Record</router-link>
+    <ConsulteGrid :name="'testGrid'" :columns="columns" :data-source="dataSource" />
   </div>
 </template>
 
@@ -15,6 +12,7 @@ import {
   ConsulteGridColumnsModel,
   DataSource,
 } from "consulte-framework-vue/components/grid";
+import axios from "axios";
 
 interface RowData {
   isActive: boolean;
@@ -26,13 +24,13 @@ interface RowData {
 
 class CustomDataSource extends DataSource<RowData> {
   load() {
-    return fetch('/data.json')
-      .then(response => response.json())
-      .then(data => {
-        return data as RowData[];
+    return axios.get('http://localhost:5000/api/users/dados')
+      .then(response => {
+        const data: RowData[] = response.data;
+        return data;
       });
   }
-  }
+}
 
 export default defineComponent({
   name: "GridPage",
@@ -42,9 +40,9 @@ export default defineComponent({
   data() {
     return {
       columns: [
-        { text: "Active", align: "center", datafield: "isActive" },
-        { text: "Name", align: "center", datafield: "name" },
-        { text: "Company", align: "center", datafield: "company" },
+        { text: "Active", align: "center", datafield: "isActive", filterable:true },
+        { text: "Name", align: "center", datafield: "name", filterable:true },
+        { text: "Company", align: "center", datafield: "company", filterable:true },
         { text: "Age", align: "center", datafield: "age" },
         { text: "Registered", align: "center", datafield: "registered", columntype: "date"},
       ] as ConsulteGridColumnsModel[],
